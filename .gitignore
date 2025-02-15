@@ -1,0 +1,81 @@
+# ==================== #
+#      Core Ignore      #
+# ==================== #
+**/node_modules/
+**/dist/
+**/build/
+**/.cache/
+**/coverage/
+**/temp/
+
+# ==================== #
+#   Environment Files   #
+# ==================== #
+# Ignore ALL .env files (root + nested) except .env.example
+**/.env
+**/.env.*
+!.env.example
+
+# ==================== #
+#      Docker Files     #
+# ==================== #
+**/Dockerfile
+**/docker-compose*.yml
+**/.dockerignore
+**/docker-dev/
+**/docker-volumes/
+docker-compose.override.yml
+docker-compose.prod.yml
+
+# PostgreSQL volume data (common in TypeORM setups)
+**/postgres_data/
+
+# ==================== #
+#    TypeORM Specific   #
+# ==================== #
+# Migrations and database config
+**/migrations/
+**/ormconfig.json
+**/ormconfig.*.json
+
+# ==================== #
+#   Editor/OS Files    #
+# ==================== #
+# WebStorm/IDEA
+.idea/
+*.iml
+*.iws
+*.ids
+
+# Windows-specific
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# ==================== #
+#    pnpm Workspace    #
+# ==================== #
+.pnpm-store/
+.pnpm-debug.log
+node_modules/.pnpm*
+**/.pnpm-store/
+
+# ==================== #
+#    Testing/Logs     #
+# ==================== #
+*.log
+*.log.*
+logs/
+**/test-results/
+
+# ==================== #
+#   Framework-Specific #
+# ==================== #
+# NuxtJS
+**/.nuxt/
+**/.output/
+**/.nitro/
+
+# NestJS
+**/*.env.local
+**/uploads/ # If using file uploads
