@@ -1,0 +1,9 @@
+{
+  "name": "ng-ui-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/ng-ui-e2e/src",
+  "implicitDependencies": ["ng-ui"],
+  "// targets": "to see all targets run: nx show project ng-ui-e2e --web",
+  "targets": {}
+}
